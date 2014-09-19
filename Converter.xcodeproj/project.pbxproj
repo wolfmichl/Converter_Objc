@@ -14,6 +14,7 @@
 		26381B0119CB2AA7005884FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0019CB2AA7005884FF /* Images.xcassets */; };
 		26381B0419CB2AA7005884FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0219CB2AA7005884FF /* LaunchScreen.xib */; };
 		269A4FBC19CC2F54002866EB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 269A4FBB19CC2F54002866EB /* Podfile */; };
+		360E46238A75956C74C5E9C0 /* HasTargetAndAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E4E6456EA9562AF76BA73 /* HasTargetAndAction.m */; };
 		360E4B1E72569E0D17844A26 /* NumberpadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E472CFCE5597602A25A07 /* NumberpadTest.m */; };
 		4F95DA6CDDC14948804F07DC /* libPods-ConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A547BF6137C54A16A3EFF79B /* libPods-ConverterTests.a */; };
 /* End PBXBuildFile section */
@@ -42,7 +43,9 @@
 		26381B0919CB2AA7005884FF /* ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26381B0E19CB2AA7005884FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		269A4FBB19CC2F54002866EB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		360E439479C8C6C147075972 /* HasTargetAndAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasTargetAndAction.h; sourceTree = "<group>"; };
 		360E472CFCE5597602A25A07 /* NumberpadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberpadTest.m; sourceTree = "<group>"; };
+		360E4E6456EA9562AF76BA73 /* HasTargetAndAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasTargetAndAction.m; sourceTree = "<group>"; };
 		A547BF6137C54A16A3EFF79B /* libPods-ConverterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ConverterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9BC3D2E4CAF4D699541B9AF /* Pods-ConverterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConverterTests.xcconfig"; path = "Pods/Pods-ConverterTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +119,7 @@
 			children = (
 				26381B0D19CB2AA7005884FF /* Supporting Files */,
 				360E472CFCE5597602A25A07 /* NumberpadTest.m */,
+				360E42984F01A6BA8153FB30 /* CustomMatchers */,
 			);
 			path = ConverterTests;
 			sourceTree = "<group>";
@@ -126,6 +130,15 @@
 				26381B0E19CB2AA7005884FF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		360E42984F01A6BA8153FB30 /* CustomMatchers */ = {
+			isa = PBXGroup;
+			children = (
+				360E439479C8C6C147075972 /* HasTargetAndAction.h */,
+				360E4E6456EA9562AF76BA73 /* HasTargetAndAction.m */,
+			);
+			path = CustomMatchers;
 			sourceTree = "<group>";
 		};
 		C4FA5E4EB38943F8ACE9397C /* Frameworks */ = {
@@ -285,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				360E4B1E72569E0D17844A26 /* NumberpadTest.m in Sources */,
+				360E46238A75956C74C5E9C0 /* HasTargetAndAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
