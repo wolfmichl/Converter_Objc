@@ -412,6 +412,7 @@
 				26381B1519CB2AA7005884FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26381B1619CB2AA7005884FF /* Build configuration list for PBXNativeTarget "ConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +421,7 @@
 				26381B1819CB2AA7005884FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
