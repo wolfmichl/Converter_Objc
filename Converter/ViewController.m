@@ -1,7 +1,8 @@
 #import "ViewController.h"
+#import "ConverterTableViewCell.h"
 
 @interface ViewController ()
-
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 @end
 
 @implementation ViewController
@@ -13,5 +14,13 @@
 - (IBAction)buttonTouched:(id)sender {
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return [self.currencies count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	ConverterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ConverterCell"];
+	return cell;
+}
 
 @end
