@@ -1,5 +1,6 @@
 #import "ViewController.h"
 #import "ConverterTableViewCell.h"
+#import "Currency.h"
 
 @interface ViewController ()
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
@@ -9,6 +10,11 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	self.currencies = @[
+			[[Currency alloc] initWithName:@"EUR"],
+			[[Currency alloc] initWithName:@"USD"],
+			[[Currency alloc] initWithName:@"GBP"]
+	];
 }
 
 - (IBAction)buttonTouched:(id)sender {
