@@ -1,16 +1,13 @@
 #import "Currency.h"
 
 
-@interface Currency ()
-@property (nonatomic, copy) NSString *name;
-@end
-
 @implementation Currency
 
 - (id)initWithName:(NSString *)name {
 	self = [super init];
 	if (self) {
 		self.name = name;
+		self.amount = 1.0;
 	}
 	return self;
 }
