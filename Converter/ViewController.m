@@ -20,6 +20,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	ConverterTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ConverterCell"];
+	cell.currency = self.currencies[(NSUInteger) indexPath.row];
 	return cell;
 }
 
