@@ -13,7 +13,7 @@
 		26381AFF19CB2AA7005884FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26381AFD19CB2AA7005884FF /* Main.storyboard */; };
 		26381B0119CB2AA7005884FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0019CB2AA7005884FF /* Images.xcassets */; };
 		26381B0419CB2AA7005884FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0219CB2AA7005884FF /* LaunchScreen.xib */; };
-		26381B1019CB2AA7005884FF /* ConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26381B0F19CB2AA7005884FF /* ConverterTests.m */; };
+		26E20C3819D3524A00E91E90 /* NumberpadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E20C3719D3524A00E91E90 /* NumberpadTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,8 @@
 		26381B0319CB2AA7005884FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		26381B0919CB2AA7005884FF /* ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26381B0E19CB2AA7005884FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26381B0F19CB2AA7005884FF /* ConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConverterTests.m; sourceTree = "<group>"; };
+		26E20C3719D3524A00E91E90 /* NumberpadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberpadTest.m; sourceTree = "<group>"; };
+		360E4609E99E7EA9B4074EDD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 				26381AF219CB2AA7005884FF /* Converter */,
 				26381B0C19CB2AA7005884FF /* ConverterTests */,
 				26381AF119CB2AA7005884FF /* Products */,
+				360E4609E99E7EA9B4074EDD /* Podfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +107,8 @@
 		26381B0C19CB2AA7005884FF /* ConverterTests */ = {
 			isa = PBXGroup;
 			children = (
-				26381B0F19CB2AA7005884FF /* ConverterTests.m */,
 				26381B0D19CB2AA7005884FF /* Supporting Files */,
+				26E20C3719D3524A00E91E90 /* NumberpadTest.m */,
 			);
 			path = ConverterTests;
 			sourceTree = "<group>";
@@ -229,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26381B1019CB2AA7005884FF /* ConverterTests.m in Sources */,
+				26E20C3819D3524A00E91E90 /* NumberpadTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
