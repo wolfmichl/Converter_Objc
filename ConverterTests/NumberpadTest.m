@@ -1,16 +1,15 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "ViewController.h"
+#import "TestHelper.h"
 
 @interface NumberpadTest : XCTestCase
-
 @end
 
 @implementation NumberpadTest
 
 - (void)testAllButtonsHaveTargetActionApplied {
-	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle bundleForClass:[ViewController class]]];
-	ViewController *viewController = [storyboard instantiateInitialViewController];
+	ViewController *viewController = [TestHelper getRootViewController];
 	for (int tag = 0; tag < 20; tag++) {
 		[self checkTarget:viewController action:@"buttonTouched:" forButtonWithTag:tag];
 	}

@@ -14,6 +14,8 @@
 		26381B0119CB2AA7005884FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0019CB2AA7005884FF /* Images.xcassets */; };
 		26381B0419CB2AA7005884FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0219CB2AA7005884FF /* LaunchScreen.xib */; };
 		26E20C3819D3524A00E91E90 /* NumberpadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E20C3719D3524A00E91E90 /* NumberpadTest.m */; };
+		26E20C3A19D356C900E91E90 /* ViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E20C3919D356C900E91E90 /* ViewControllerTest.m */; };
+		360E424C9BB62391162F072D /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E44401B66F78578F8C0E8 /* TestHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,10 @@
 		26381B0919CB2AA7005884FF /* ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26381B0E19CB2AA7005884FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26E20C3719D3524A00E91E90 /* NumberpadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberpadTest.m; sourceTree = "<group>"; };
+		26E20C3919D356C900E91E90 /* ViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTest.m; sourceTree = "<group>"; };
+		360E44401B66F78578F8C0E8 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
 		360E4609E99E7EA9B4074EDD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		360E4B0E8FD8EBDDCF7F1080 /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,9 @@
 			children = (
 				26381B0D19CB2AA7005884FF /* Supporting Files */,
 				26E20C3719D3524A00E91E90 /* NumberpadTest.m */,
+				26E20C3919D356C900E91E90 /* ViewControllerTest.m */,
+				360E44401B66F78578F8C0E8 /* TestHelper.m */,
+				360E4B0E8FD8EBDDCF7F1080 /* TestHelper.h */,
 			);
 			path = ConverterTests;
 			sourceTree = "<group>";
@@ -231,7 +239,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E20C3A19D356C900E91E90 /* ViewControllerTest.m in Sources */,
 				26E20C3819D3524A00E91E90 /* NumberpadTest.m in Sources */,
+				360E424C9BB62391162F072D /* TestHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

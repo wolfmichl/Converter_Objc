@@ -8,6 +8,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	self.displayLabel.text = @"0";
 }
 
 - (IBAction)buttonTouched:(id)sender {
