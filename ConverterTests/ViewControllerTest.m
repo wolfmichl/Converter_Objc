@@ -18,7 +18,7 @@
 - (void)testInitializesDisplayWithZeroOnLoad {
 	ViewController *viewController = [TestHelper getRootViewController];
 	[viewController viewDidLoad];
-	XCTAssertEqualObjects(viewController.displayLabel.text, @"0");
+	XCTAssertEqualObjects(viewController.displayLabel.text, @"1");
 }
 
 - (ViewController *)getRootViewController {
