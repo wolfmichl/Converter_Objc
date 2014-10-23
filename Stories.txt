@@ -1,6 +1,6 @@
-Bei Drücken einer Taste erscheint die Ziffer auf dem Display
+Bei Drücken einer Taste erscheint die Ziffer auf dem Display	ok
 
-Drücken einer weiteren Taste hängt die Ziffer hinten an
+Drücken einer weiteren Taste hängt die Ziffer hinten an			ok
 
 Beschränke die maximale Anzahl an Ziffern auf 10
 
