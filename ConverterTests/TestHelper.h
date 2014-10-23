@@ -1,8 +1,8 @@
 #import <Foundation/Foundation.h>
 
-@class ViewController;
+@class ConverterController;
 
 
 @interface TestHelper : NSObject
-+ (ViewController *)getRootViewController;
++ (ConverterController *)getRootViewController;
 @end

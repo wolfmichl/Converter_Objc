@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		26381AF619CB2AA7005884FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26381AF519CB2AA7005884FF /* main.m */; };
 		26381AF919CB2AA7005884FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26381AF819CB2AA7005884FF /* AppDelegate.m */; };
-		26381AFC19CB2AA7005884FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26381AFB19CB2AA7005884FF /* ViewController.m */; };
+		26381AFC19CB2AA7005884FF /* ConverterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26381AFB19CB2AA7005884FF /* ConverterController.m */; };
 		26381AFF19CB2AA7005884FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26381AFD19CB2AA7005884FF /* Main.storyboard */; };
 		26381B0119CB2AA7005884FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0019CB2AA7005884FF /* Images.xcassets */; };
 		26381B0419CB2AA7005884FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0219CB2AA7005884FF /* LaunchScreen.xib */; };
 		26B442A119F91A7800646447 /* Stories.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26B442A019F91A7800646447 /* Stories.txt */; };
 		26B442A419F91D5500646447 /* Numberpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B442A319F91D5500646447 /* Numberpad.m */; };
-		26B442A619F920E300646447 /* ViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B442A519F920E300646447 /* ViewControllerTest.m */; };
+		26B442A619F920E300646447 /* ConverterControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B442A519F920E300646447 /* ConverterControllerTest.m */; };
 		26E20C3819D3524A00E91E90 /* NumberpadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E20C3719D3524A00E91E90 /* NumberpadTest.m */; };
 		360E424C9BB62391162F072D /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E44401B66F78578F8C0E8 /* TestHelper.m */; };
 		4589097A1ACD069896B70613 /* libPods-ConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF26E4C8ECD24EC98ED0341C /* libPods-ConverterTests.a */; };
@@ -37,8 +37,8 @@
 		26381AF519CB2AA7005884FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26381AF719CB2AA7005884FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		26381AF819CB2AA7005884FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		26381AFA19CB2AA7005884FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		26381AFB19CB2AA7005884FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		26381AFA19CB2AA7005884FF /* ConverterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConverterController.h; sourceTree = "<group>"; };
+		26381AFB19CB2AA7005884FF /* ConverterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConverterController.m; sourceTree = "<group>"; };
 		26381AFE19CB2AA7005884FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26381B0019CB2AA7005884FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		26381B0319CB2AA7005884FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		26B442A019F91A7800646447 /* Stories.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stories.txt; sourceTree = "<group>"; };
 		26B442A219F91D5500646447 /* Numberpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numberpad.h; sourceTree = "<group>"; };
 		26B442A319F91D5500646447 /* Numberpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numberpad.m; sourceTree = "<group>"; };
-		26B442A519F920E300646447 /* ViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTest.m; sourceTree = "<group>"; };
+		26B442A519F920E300646447 /* ConverterControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterControllerTest.m; sourceTree = "<group>"; };
 		26E20C3719D3524A00E91E90 /* NumberpadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberpadTest.m; sourceTree = "<group>"; };
 		276106AF19E5D9E100708A18 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		276106B219E5DF2400708A18 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 			children = (
 				26381AF719CB2AA7005884FF /* AppDelegate.h */,
 				26381AF819CB2AA7005884FF /* AppDelegate.m */,
-				26381AFA19CB2AA7005884FF /* ViewController.h */,
-				26381AFB19CB2AA7005884FF /* ViewController.m */,
+				26381AFA19CB2AA7005884FF /* ConverterController.h */,
+				26381AFB19CB2AA7005884FF /* ConverterController.m */,
 				26381AFD19CB2AA7005884FF /* Main.storyboard */,
 				26381B0019CB2AA7005884FF /* Images.xcassets */,
 				26381B0219CB2AA7005884FF /* LaunchScreen.xib */,
@@ -134,7 +134,7 @@
 				26E20C3719D3524A00E91E90 /* NumberpadTest.m */,
 				360E4B0E8FD8EBDDCF7F1080 /* TestHelper.h */,
 				360E44401B66F78578F8C0E8 /* TestHelper.m */,
-				26B442A519F920E300646447 /* ViewControllerTest.m */,
+				26B442A519F920E300646447 /* ConverterControllerTest.m */,
 			);
 			path = ConverterTests;
 			sourceTree = "<group>";
@@ -311,7 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26B442A419F91D5500646447 /* Numberpad.m in Sources */,
-				26381AFC19CB2AA7005884FF /* ViewController.m in Sources */,
+				26381AFC19CB2AA7005884FF /* ConverterController.m in Sources */,
 				26381AF919CB2AA7005884FF /* AppDelegate.m in Sources */,
 				26381AF619CB2AA7005884FF /* main.m in Sources */,
 			);
@@ -323,7 +323,7 @@
 			files = (
 				26E20C3819D3524A00E91E90 /* NumberpadTest.m in Sources */,
 				360E424C9BB62391162F072D /* TestHelper.m in Sources */,
-				26B442A619F920E300646447 /* ViewControllerTest.m in Sources */,
+				26B442A619F920E300646447 /* ConverterControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

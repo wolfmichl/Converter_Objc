@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "ViewController.h"
+#import "ConverterController.h"
 #import "TestHelper.h"
 #import "Numberpad.h"
 

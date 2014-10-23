@@ -1,12 +1,12 @@
 #import "TestHelper.h"
-#import "ViewController.h"
+#import "ConverterController.h"
 
 @implementation TestHelper {
 }
 
-+ (ViewController*) getRootViewController {
-	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle bundleForClass:[ViewController class]]];
-	ViewController *viewController = [storyboard instantiateInitialViewController];
++ (ConverterController*) getRootViewController {
+	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle bundleForClass:[ConverterController class]]];
+	ConverterController *viewController = [storyboard instantiateInitialViewController];
 	[viewController loadView];
 	return viewController;
 }

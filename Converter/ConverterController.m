@@ -1,10 +1,11 @@
-#import "ViewController.h"
+#import "ConverterController.h"
+#import "Numberpad.h"
 
-@interface ViewController ()
+@interface ConverterController ()
 
 @end
 
-@implementation ViewController
+@implementation ConverterController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -13,6 +14,7 @@
 
 - (IBAction)buttonTouched:(id)sender {
 	NSLog(@"button touched with tag %ld", (long)[sender tag]);
+	[self.numberpad numberTouched:[sender tag]];
 }
 
 
