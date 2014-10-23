@@ -13,8 +13,10 @@
 		26381AFF19CB2AA7005884FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26381AFD19CB2AA7005884FF /* Main.storyboard */; };
 		26381B0119CB2AA7005884FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0019CB2AA7005884FF /* Images.xcassets */; };
 		26381B0419CB2AA7005884FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0219CB2AA7005884FF /* LaunchScreen.xib */; };
+		26B442A119F91A7800646447 /* Stories.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26B442A019F91A7800646447 /* Stories.txt */; };
+		26B442A419F91D5500646447 /* Numberpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B442A319F91D5500646447 /* Numberpad.m */; };
+		26B442A619F920E300646447 /* ViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B442A519F920E300646447 /* ViewControllerTest.m */; };
 		26E20C3819D3524A00E91E90 /* NumberpadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E20C3719D3524A00E91E90 /* NumberpadTest.m */; };
-		26E20C3A19D356C900E91E90 /* ViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E20C3919D356C900E91E90 /* ViewControllerTest.m */; };
 		360E424C9BB62391162F072D /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E44401B66F78578F8C0E8 /* TestHelper.m */; };
 		4589097A1ACD069896B70613 /* libPods-ConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF26E4C8ECD24EC98ED0341C /* libPods-ConverterTests.a */; };
 /* End PBXBuildFile section */
@@ -42,12 +44,15 @@
 		26381B0319CB2AA7005884FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		26381B0919CB2AA7005884FF /* ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26381B0E19CB2AA7005884FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26B442A019F91A7800646447 /* Stories.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stories.txt; sourceTree = "<group>"; };
+		26B442A219F91D5500646447 /* Numberpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numberpad.h; sourceTree = "<group>"; };
+		26B442A319F91D5500646447 /* Numberpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numberpad.m; sourceTree = "<group>"; };
+		26B442A519F920E300646447 /* ViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTest.m; sourceTree = "<group>"; };
 		26E20C3719D3524A00E91E90 /* NumberpadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberpadTest.m; sourceTree = "<group>"; };
-		26E20C3919D356C900E91E90 /* ViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTest.m; sourceTree = "<group>"; };
 		276106AF19E5D9E100708A18 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		276106B219E5DF2400708A18 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		360E44401B66F78578F8C0E8 /* TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelper.m; sourceTree = "<group>"; };
-		360E4609E99E7EA9B4074EDD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		360E4609E99E7EA9B4074EDD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		360E4B0E8FD8EBDDCF7F1080 /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
 		940D1B5136C17D6CCD22CB80 /* Pods-ConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConverterTests/Pods-ConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		C7F28C2FA8D94B64CF496339 /* Pods-ConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConverterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConverterTests/Pods-ConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 		26381AE719CB2AA7005884FF = {
 			isa = PBXGroup;
 			children = (
+				26B442A019F91A7800646447 /* Stories.txt */,
 				26381AF219CB2AA7005884FF /* Converter */,
 				26381B0C19CB2AA7005884FF /* ConverterTests */,
 				26381AF119CB2AA7005884FF /* Products */,
@@ -106,6 +112,8 @@
 				26381B0019CB2AA7005884FF /* Images.xcassets */,
 				26381B0219CB2AA7005884FF /* LaunchScreen.xib */,
 				26381AF319CB2AA7005884FF /* Supporting Files */,
+				26B442A219F91D5500646447 /* Numberpad.h */,
+				26B442A319F91D5500646447 /* Numberpad.m */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -124,9 +132,9 @@
 			children = (
 				26381B0D19CB2AA7005884FF /* Supporting Files */,
 				26E20C3719D3524A00E91E90 /* NumberpadTest.m */,
-				26E20C3919D356C900E91E90 /* ViewControllerTest.m */,
-				360E44401B66F78578F8C0E8 /* TestHelper.m */,
 				360E4B0E8FD8EBDDCF7F1080 /* TestHelper.h */,
+				360E44401B66F78578F8C0E8 /* TestHelper.m */,
+				26B442A519F920E300646447 /* ViewControllerTest.m */,
 			);
 			path = ConverterTests;
 			sourceTree = "<group>";
@@ -250,6 +258,7 @@
 			files = (
 				26381AFF19CB2AA7005884FF /* Main.storyboard in Resources */,
 				26381B0419CB2AA7005884FF /* LaunchScreen.xib in Resources */,
+				26B442A119F91A7800646447 /* Stories.txt in Resources */,
 				26381B0119CB2AA7005884FF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B442A419F91D5500646447 /* Numberpad.m in Sources */,
 				26381AFC19CB2AA7005884FF /* ViewController.m in Sources */,
 				26381AF919CB2AA7005884FF /* AppDelegate.m in Sources */,
 				26381AF619CB2AA7005884FF /* main.m in Sources */,
@@ -311,9 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26E20C3A19D356C900E91E90 /* ViewControllerTest.m in Sources */,
 				26E20C3819D3524A00E91E90 /* NumberpadTest.m in Sources */,
 				360E424C9BB62391162F072D /* TestHelper.m in Sources */,
+				26B442A619F920E300646447 /* ViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

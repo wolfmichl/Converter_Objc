@@ -1,7 +1,13 @@
+//
+//  ViewControllerTest.m
+//  Converter
+//
+//  Created by Sven Günther on 23.10.14.
+//  Copyright (c) 2014 it-agile GmbH. All rights reserved.
+//
+
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "ViewController.h"
-#import "TestHelper.h"
 
 @interface ViewControllerTest : XCTestCase
 
@@ -9,21 +15,26 @@
 
 @implementation ViewControllerTest
 
-- (void)testHasDisplayLabelConnected {
-	ViewController *viewController = [TestHelper getRootViewController];
-	UILabel *label = viewController.displayLabel;
-	XCTAssertNotNil(label);
+- (void)setUp {
+    [super setUp];
+    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
-- (void)testInitializesDisplayWithZeroOnLoad {
-	ViewController *viewController = [TestHelper getRootViewController];
-	[viewController viewDidLoad];
-	XCTAssertEqualObjects(viewController.displayLabel.text, @"0");
+- (void)tearDown {
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    [super tearDown];
 }
 
-- (ViewController *)getRootViewController {
-	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle bundleForClass:[ViewController class]]];
-	return [storyboard instantiateInitialViewController];
+- (void)testExample {
+    // This is an example of a functional test case.
+    XCTAssert(YES, @"Pass");
+}
+
+- (void)testPerformanceExample {
+    // This is an example of a performance test case.
+    [self measureBlock:^{
+        // Put the code you want to measure the time of here.
+    }];
 }
 
 @end

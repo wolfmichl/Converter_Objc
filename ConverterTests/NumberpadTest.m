@@ -2,25 +2,31 @@
 #import <XCTest/XCTest.h>
 #import "ViewController.h"
 #import "TestHelper.h"
+#import "Numberpad.h"
+
+#define HC_SHORTHAND
+#import "OCHamcrest/OCHamcrest.h"
 
 @interface NumberpadTest : XCTestCase
 @end
 
-@implementation NumberpadTest
-
-- (void)testAllButtonsHaveTargetActionApplied {
-	ViewController *viewController = [TestHelper getRootViewController];
-	for (int tag = 0; tag < 20; tag++) {
-		[self checkTarget:viewController action:@"buttonTouched:" forButtonWithTag:tag];
-	}
+@implementation NumberpadTest {
+	Numberpad *pad;
 }
 
-- (void)checkTarget:(ViewController *)viewController action:(NSString *)action forButtonWithTag:(NSInteger)tag {
-	UIView *numberpadView = [viewController.view viewWithTag:200];
-	UIButton *button0 = (UIButton *) [numberpadView viewWithTag:tag];
-	NSArray *actions = [button0 actionsForTarget:viewController forControlEvent:UIControlEventTouchUpInside];
-	XCTAssert(actions.count > 0);
-	XCTAssertEqualObjects(actions[0], action);
+-(void) setUp {
+	pad = [[Numberpad alloc] init];
+}
+
+-(void) testInputOneNumber {
+	[pad numberTouched:3];
+	assertThat([pad displayValue], equalTo(@"3"));
+}
+
+-(void) testSecondNumberAddsOnFirstnumber {
+	[pad numberTouched:2];
+	[pad numberTouched:3];
+	assertThat([pad displayValue], equalTo(@"23"));
 }
 
 @end

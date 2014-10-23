@@ -1,0 +1,17 @@
+Bei Drücken einer Taste erscheint die Ziffer auf dem Display
+
+Drücken einer weiteren Taste hängt die Ziffer hinten an
+
+Beschränke die maximale Anzahl an Ziffern auf 10
+
+Unterdrücke fÜhrende Null
+
+Eingabe von Komma ermöglichen
+
+Mehrfaches Komma verhindern
+
+Führende Null bei Komma erlauben
+
+Letztes Zeichen löschen durch "C"
+
+Drücken von "AC" setzt Diplay auf "0" zurück
