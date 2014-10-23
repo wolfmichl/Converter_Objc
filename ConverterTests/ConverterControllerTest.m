@@ -9,12 +9,29 @@
 #define MOCKITO_SHORTHAND
 #import "OCMockito/OCMockito.h"
 
+@interface ConverterController (Testing)
 
-@interface ConverterControllerTest : XCTestCase
+@property (nonatomic, weak) IBOutlet UILabel *displayLabel;
+@property (nonatomic) Numberpad *numberpad;
+
+- (IBAction)buttonTouched:(id)sender;
 
 @end
 
-@implementation ConverterControllerTest
+
+@interface ConverterControllerTest : XCTestCase
+@end
+
+@implementation ConverterControllerTest {
+	ConverterController *controller;
+	id numberpad;
+}
+
+-(void)setUp {
+	controller = [[ConverterController alloc] init];
+	numberpad = mock([Numberpad class]);
+	controller.numberpad = numberpad;
+}
 
 - (id)buttonWithTag:(int)tagNumber {
 	id button = mock([UIButton class]);
@@ -23,10 +40,21 @@
 }
 
 - (void)testSendsButtonTouchesToNumberpad {
-	id numberpad = mock([Numberpad class]);
-	ConverterController *controller = [[ConverterController alloc] init];
-	controller.numberpad = numberpad;
 	[controller buttonTouched:[self buttonWithTag:42]];
 	[verify(numberpad) numberTouched:42];
+}
+
+- (void)testShowsValueFromNumberpadInDisplay {
+	[given([numberpad displayValue]) willReturn:@"42"];
+	
+	id display = mock([UILabel class]);
+	controller.displayLabel = display;
+	[controller buttonTouched:nil];
+	[verify(display) setText:@"42"];
+}
+
+- (void)testNewInstantiatedControllerHasNumberpad {
+	controller = [[ConverterController alloc] init];
+	assertThat(controller.numberpad, isNot(nilValue()));
 }
 @end

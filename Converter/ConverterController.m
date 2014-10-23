@@ -3,6 +3,9 @@
 
 @interface ConverterController ()
 
+@property (nonatomic, weak) IBOutlet UILabel *displayLabel;
+@property (nonatomic) Numberpad *numberpad;
+
 @end
 
 @implementation ConverterController
@@ -12,9 +15,16 @@
 	self.displayLabel.text = @"0";
 }
 
+-(Numberpad *)numberpad {
+	if (_numberpad == nil) {
+		_numberpad = [[Numberpad alloc] init];
+	}
+	return _numberpad;
+}
+
 - (IBAction)buttonTouched:(id)sender {
-	NSLog(@"button touched with tag %ld", (long)[sender tag]);
 	[self.numberpad numberTouched:[sender tag]];
+	self.displayLabel.text = self.numberpad.displayValue;
 }
 
 

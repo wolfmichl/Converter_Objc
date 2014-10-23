@@ -13,6 +13,7 @@
 		26381AFF19CB2AA7005884FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26381AFD19CB2AA7005884FF /* Main.storyboard */; };
 		26381B0119CB2AA7005884FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0019CB2AA7005884FF /* Images.xcassets */; };
 		26381B0419CB2AA7005884FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0219CB2AA7005884FF /* LaunchScreen.xib */; };
+		269D3D2819F92BC500FC4030 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269D3D2719F92BC500FC4030 /* XCTest.framework */; };
 		26B442A119F91A7800646447 /* Stories.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26B442A019F91A7800646447 /* Stories.txt */; };
 		26B442A419F91D5500646447 /* Numberpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B442A319F91D5500646447 /* Numberpad.m */; };
 		26B442A619F920E300646447 /* ConverterControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B442A519F920E300646447 /* ConverterControllerTest.m */; };
@@ -44,6 +45,7 @@
 		26381B0319CB2AA7005884FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		26381B0919CB2AA7005884FF /* ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26381B0E19CB2AA7005884FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269D3D2719F92BC500FC4030 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		26B442A019F91A7800646447 /* Stories.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stories.txt; sourceTree = "<group>"; };
 		26B442A219F91D5500646447 /* Numberpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numberpad.h; sourceTree = "<group>"; };
 		26B442A319F91D5500646447 /* Numberpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numberpad.m; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				269D3D2819F92BC500FC4030 /* XCTest.framework in Frameworks */,
 				4589097A1ACD069896B70613 /* libPods-ConverterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +162,7 @@
 		8B4DCDDA96739BCC17DB9915 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				269D3D2719F92BC500FC4030 /* XCTest.framework */,
 				CF26E4C8ECD24EC98ED0341C /* libPods-ConverterTests.a */,
 			);
 			name = Frameworks;
@@ -437,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Converter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Converter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -458,9 +464,11 @@
 			baseConfigurationReference = C7F28C2FA8D94B64CF496339 /* Pods-ConverterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -478,9 +486,11 @@
 			baseConfigurationReference = 940D1B5136C17D6CCD22CB80 /* Pods-ConverterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks",
 				);
 				INFOPLIST_FILE = ConverterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
