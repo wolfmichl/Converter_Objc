@@ -13,13 +13,17 @@
 {
 	self = [super init];
 	if (self) {
-		_value = @"";
+		_value = @"0";
 	}
 	return self;
 }
 
 - (void)numberTouched:(NSUInteger)number {
-	self.value = [self.value stringByAppendingString:[@(number) stringValue]];
+	if([self.value isEqualToString:@"0"]) {
+		self.value = [@(number) stringValue];
+	} else {
+		self.value = [self.value stringByAppendingString:[@(number) stringValue]];
+	}
 }
 
 - (NSString *)displayValue {

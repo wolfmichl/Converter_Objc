@@ -12,7 +12,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	self.displayLabel.text = @"0";
+	self.displayLabel.text = self.numberpad.displayValue;
 }
 
 -(Numberpad *)numberpad {
