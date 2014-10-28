@@ -11,3 +11,7 @@ test_with_result:
 
 deploy:
 	ipa build -d build
+
+spec:
+	frank build
+	cd Frank; cucumber
