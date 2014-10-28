@@ -20,7 +20,7 @@
 
 -(void) testInputOneNumber {
 	[pad numberTouched:3];
-	assertThat([pad displayValue], equalTo(@"2"));
+	assertThat([pad displayValue], equalTo(@3"));
 }
 
 -(void) testSecondNumberAddsOnFirstnumber {
