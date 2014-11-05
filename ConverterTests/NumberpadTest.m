@@ -26,7 +26,7 @@
 -(void) testSecondNumberAddsOnFirstnumber {
 	[pad numberTouched:2];
 	[pad numberTouched:3];
-	assertThat([pad displayValue], equalTo(@"23xxx"));
+	assertThat([pad displayValue], equalTo(@"23"));
 }
 
 @end
