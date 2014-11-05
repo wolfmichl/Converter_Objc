@@ -11,6 +11,7 @@ test_with_result:
 
 deploy:
 	ipa build -d build
+	ipa distribute:hockeyapp --token d334d30117d340e983d5407d85075684 -f build/Converter.ipa -d build/Converter.app.dSYM.zip -m "New version"
 
 spec:
 	frank build
