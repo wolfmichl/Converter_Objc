@@ -6,5 +6,5 @@ Feature: Zahlen eingeben
   Scenario: Zahlen eingeben
     Given I launch the app
     When I enter "23"
-    Then I should see "23"
+    Then I should see "231"
     Then I save a screenshot named "Result"
