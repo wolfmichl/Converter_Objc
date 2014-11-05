@@ -64,7 +64,7 @@
                                     </button>
                                     <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7XS-Fy-s07">
                                         <rect key="frame" x="287" y="334" width="138" height="138"/>
-                                        <color key="backgroundColor" red="1" green="0.50588235290000005" blue="0.01176470588" alpha="1" colorSpace="deviceRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="7XS-Fy-s07" secondAttribute="height" multiplier="1:1" id="eVC-QO-Vfh"/>
                                         </constraints>
