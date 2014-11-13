@@ -16,11 +16,7 @@
 	CurrencyRateUpdater *updater = [[CurrencyRateUpdater alloc] init];
 	updater.delegate = self;
 	[updater updateConversionRateForCurrencyFromEuroTo:@"USD"];
-	[self waitForExpectationsWithTimeout:30 handler:^(NSError *error) {
-	    if (error) {
-		    NSLog(@"Timeout Error: %@", error);
-	    }
-	}];
+	[self waitForExpectationsWithTimeout:10 handler:nil];
 }
 
 - (void)currencyRateUpdater:(CurrencyRateUpdater *)updater didUpdateRate:(NSNumber *)rate forCurrency:(NSString *)isoCode {
