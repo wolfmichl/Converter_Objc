@@ -1,6 +1,6 @@
-Bei Drücken einer Taste erscheint die Ziffer auf dem Display	ok
+Bei Drücken einer Taste erscheint die Ziffer auf dem Display
 
-Drücken einer weiteren Taste hängt die Ziffer hinten an			ok
+Drücken einer weiteren Taste hängt die Ziffer hinten an
 
 Beschränke die maximale Anzahl an Ziffern auf 10
 
@@ -15,3 +15,10 @@ Führende Null bei Komma erlauben
 Letztes Zeichen löschen durch "C"
 
 Drücken von "AC" setzt Diplay auf "0" zurück
+
+Lasse Wechselkurs wählen über Settings-Button
+
+Hole aktuelle Kurse
+
+Rechne Wert in Zielwährung um
+
