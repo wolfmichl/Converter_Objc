@@ -11,7 +11,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	self.displayLabel = @"0";
+	self.displayLabel.text = @"0";
 }
 
 - (IBAction)buttonTouched:(id)sender {
