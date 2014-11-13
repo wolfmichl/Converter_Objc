@@ -150,7 +150,7 @@
 			children = (
 				26381B0D19CB2AA7005884FF /* Supporting Files */,
 				268528F21A14BBA100BCDACB /* SmokeUnitTest.m */,
-				26D174521A14F50300021DC0 /* CurrencyRateUpdaterTest.m */,
+				26D174551A14FA9C00021DC0 /* CurrencyRateUpdater */,
 			);
 			path = ConverterTests;
 			sourceTree = "<group>";
@@ -170,6 +170,14 @@
 				26D1744D1A14DB3900021DC0 /* CurrencyRateUpdater.m */,
 			);
 			name = CurrencyConverter;
+			sourceTree = "<group>";
+		};
+		26D174551A14FA9C00021DC0 /* CurrencyRateUpdater */ = {
+			isa = PBXGroup;
+			children = (
+				26D174521A14F50300021DC0 /* CurrencyRateUpdaterTest.m */,
+			);
+			name = CurrencyRateUpdater;
 			sourceTree = "<group>";
 		};
 		276106B119E5DE9D00708A18 /* Addional Files */ = {
