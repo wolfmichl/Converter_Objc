@@ -23,7 +23,9 @@
 		26BE26431A14AA6400CC364C /* Stories.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26B442A019F91A7800646447 /* Stories.txt */; };
 		26BE26441A14AA6400CC364C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0019CB2AA7005884FF /* Images.xcassets */; };
 		26BE264D1A14AB8D00CC364C /* ConverterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26381AFB19CB2AA7005884FF /* ConverterController.m */; };
-		26D1744E1A14DB3900021DC0 /* CurrencyConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1744D1A14DB3900021DC0 /* CurrencyConverter.m */; };
+		26D1744E1A14DB3900021DC0 /* CurrencyRateUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1744D1A14DB3900021DC0 /* CurrencyRateUpdater.m */; };
+		26D174531A14F50300021DC0 /* CurrencyRateUpdaterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D174521A14F50300021DC0 /* CurrencyRateUpdaterTest.m */; };
+		26D174541A14F50700021DC0 /* CurrencyRateUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1744D1A14DB3900021DC0 /* CurrencyRateUpdater.m */; };
 		4589097A1ACD069896B70613 /* libPods-ConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF26E4C8ECD24EC98ED0341C /* libPods-ConverterTests.a */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +57,9 @@
 		26B442A019F91A7800646447 /* Stories.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stories.txt; sourceTree = "<group>"; };
 		26BE26481A14AA6400CC364C /* Converter copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Converter copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BE26491A14AA6500CC364C /* Converter copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Converter copy-Info.plist"; path = "/Users/sven/temp/Converter_Objc/Converter copy-Info.plist"; sourceTree = "<absolute>"; };
-		26D1744C1A14DB3900021DC0 /* CurrencyConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyConverter.h; sourceTree = "<group>"; };
-		26D1744D1A14DB3900021DC0 /* CurrencyConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyConverter.m; sourceTree = "<group>"; };
+		26D1744C1A14DB3900021DC0 /* CurrencyRateUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyRateUpdater.h; sourceTree = "<group>"; };
+		26D1744D1A14DB3900021DC0 /* CurrencyRateUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyRateUpdater.m; sourceTree = "<group>"; };
+		26D174521A14F50300021DC0 /* CurrencyRateUpdaterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyRateUpdaterTest.m; sourceTree = "<group>"; };
 		276106AF19E5D9E100708A18 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		276106B219E5DF2400708A18 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		360E4609E99E7EA9B4074EDD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -147,6 +150,7 @@
 			children = (
 				26381B0D19CB2AA7005884FF /* Supporting Files */,
 				268528F21A14BBA100BCDACB /* SmokeUnitTest.m */,
+				26D174521A14F50300021DC0 /* CurrencyRateUpdaterTest.m */,
 			);
 			path = ConverterTests;
 			sourceTree = "<group>";
@@ -162,8 +166,8 @@
 		26D1744B1A14DB1B00021DC0 /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
-				26D1744C1A14DB3900021DC0 /* CurrencyConverter.h */,
-				26D1744D1A14DB3900021DC0 /* CurrencyConverter.m */,
+				26D1744C1A14DB3900021DC0 /* CurrencyRateUpdater.h */,
+				26D1744D1A14DB3900021DC0 /* CurrencyRateUpdater.m */,
 			);
 			name = CurrencyConverter;
 			sourceTree = "<group>";
@@ -362,7 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26381AFC19CB2AA7005884FF /* ConverterController.m in Sources */,
-				26D1744E1A14DB3900021DC0 /* CurrencyConverter.m in Sources */,
+				26D1744E1A14DB3900021DC0 /* CurrencyRateUpdater.m in Sources */,
 				26381AF919CB2AA7005884FF /* AppDelegate.m in Sources */,
 				26381AF619CB2AA7005884FF /* main.m in Sources */,
 			);
@@ -372,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D174531A14F50300021DC0 /* CurrencyRateUpdaterTest.m in Sources */,
 				268528F31A14BBA100BCDACB /* SmokeUnitTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D174541A14F50700021DC0 /* CurrencyRateUpdater.m in Sources */,
 				26BE264D1A14AB8D00CC364C /* ConverterController.m in Sources */,
 				26BE263D1A14AA6400CC364C /* AppDelegate.m in Sources */,
 				26BE263E1A14AA6400CC364C /* main.m in Sources */,
