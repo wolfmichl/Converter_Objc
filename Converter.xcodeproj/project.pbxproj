@@ -17,6 +17,14 @@
 		26B442A119F91A7800646447 /* Stories.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26B442A019F91A7800646447 /* Stories.txt */; };
 		26B442A419F91D5500646447 /* Numberpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B442A319F91D5500646447 /* Numberpad.m */; };
 		26B442A619F920E300646447 /* ConverterControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B442A519F920E300646447 /* ConverterControllerTest.m */; };
+		26BE263B1A14AA6400CC364C /* Numberpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B442A319F91D5500646447 /* Numberpad.m */; };
+		26BE263D1A14AA6400CC364C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26381AF819CB2AA7005884FF /* AppDelegate.m */; };
+		26BE263E1A14AA6400CC364C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26381AF519CB2AA7005884FF /* main.m */; };
+		26BE26411A14AA6400CC364C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26381AFD19CB2AA7005884FF /* Main.storyboard */; };
+		26BE26421A14AA6400CC364C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0219CB2AA7005884FF /* LaunchScreen.xib */; };
+		26BE26431A14AA6400CC364C /* Stories.txt in Resources */ = {isa = PBXBuildFile; fileRef = 26B442A019F91A7800646447 /* Stories.txt */; };
+		26BE26441A14AA6400CC364C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26381B0019CB2AA7005884FF /* Images.xcassets */; };
+		26BE264D1A14AB8D00CC364C /* ConverterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26381AFB19CB2AA7005884FF /* ConverterController.m */; };
 		26E20C3819D3524A00E91E90 /* NumberpadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E20C3719D3524A00E91E90 /* NumberpadTest.m */; };
 		4589097A1ACD069896B70613 /* libPods-ConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF26E4C8ECD24EC98ED0341C /* libPods-ConverterTests.a */; };
 /* End PBXBuildFile section */
@@ -49,6 +57,8 @@
 		26B442A219F91D5500646447 /* Numberpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numberpad.h; sourceTree = "<group>"; };
 		26B442A319F91D5500646447 /* Numberpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numberpad.m; sourceTree = "<group>"; };
 		26B442A519F920E300646447 /* ConverterControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterControllerTest.m; sourceTree = "<group>"; };
+		26BE26481A14AA6400CC364C /* Converter copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Converter copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26BE26491A14AA6500CC364C /* Converter copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Converter copy-Info.plist"; path = "/Users/sven/temp/Converter_Objc/Converter copy-Info.plist"; sourceTree = "<absolute>"; };
 		26E20C3719D3524A00E91E90 /* NumberpadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberpadTest.m; sourceTree = "<group>"; };
 		276106AF19E5D9E100708A18 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		276106B219E5DF2400708A18 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -75,6 +85,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26BE263F1A14AA6400CC364C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +106,7 @@
 				276106B119E5DE9D00708A18 /* Addional Files */,
 				C65BEBB2CB2F1BCC593B4236 /* Pods */,
 				8B4DCDDA96739BCC17DB9915 /* Frameworks */,
+				26BE26491A14AA6500CC364C /* Converter copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +115,7 @@
 			children = (
 				26381AF019CB2AA7005884FF /* Converter.app */,
 				26381B0919CB2AA7005884FF /* ConverterTests.xctest */,
+				26BE26481A14AA6400CC364C /* Converter copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,6 +231,23 @@
 			productReference = 26381B0919CB2AA7005884FF /* ConverterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		26BE26391A14AA6400CC364C /* Converter_UITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26BE26451A14AA6400CC364C /* Build configuration list for PBXNativeTarget "Converter_UITest" */;
+			buildPhases = (
+				26BE263A1A14AA6400CC364C /* Sources */,
+				26BE263F1A14AA6400CC364C /* Frameworks */,
+				26BE26401A14AA6400CC364C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Converter_UITest;
+			productName = Converter;
+			productReference = 26BE26481A14AA6400CC364C /* Converter copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -246,6 +282,7 @@
 			targets = (
 				26381AEF19CB2AA7005884FF /* Converter */,
 				26381B0819CB2AA7005884FF /* ConverterTests */,
+				26BE26391A14AA6400CC364C /* Converter_UITest */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +303,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26BE26401A14AA6400CC364C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26BE26411A14AA6400CC364C /* Main.storyboard in Resources */,
+				26BE26421A14AA6400CC364C /* LaunchScreen.xib in Resources */,
+				26BE26431A14AA6400CC364C /* Stories.txt in Resources */,
+				26BE26441A14AA6400CC364C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +370,17 @@
 			files = (
 				26E20C3819D3524A00E91E90 /* NumberpadTest.m in Sources */,
 				26B442A619F920E300646447 /* ConverterControllerTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26BE263A1A14AA6400CC364C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26BE264D1A14AB8D00CC364C /* ConverterController.m in Sources */,
+				26BE263B1A14AA6400CC364C /* Numberpad.m in Sources */,
+				26BE263D1A14AA6400CC364C /* AppDelegate.m in Sources */,
+				26BE263E1A14AA6400CC364C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +560,36 @@
 			};
 			name = Release;
 		};
+		26BE26461A14AA6400CC364C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Converter copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRANK_LIBRARY_SEARCH_PATHS)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(FRANK_LDFLAGS)",
+				);
+				PRODUCT_NAME = "Converter copy";
+			};
+			name = Debug;
+		};
+		26BE26471A14AA6400CC364C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "Converter copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Converter copy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -527,6 +616,15 @@
 			buildConfigurations = (
 				26381B1719CB2AA7005884FF /* Debug */,
 				26381B1819CB2AA7005884FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26BE26451A14AA6400CC364C /* Build configuration list for PBXNativeTarget "Converter_UITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26BE26461A14AA6400CC364C /* Debug */,
+				26BE26471A14AA6400CC364C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
