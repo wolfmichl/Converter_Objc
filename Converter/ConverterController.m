@@ -3,6 +3,7 @@
 @interface ConverterController ()
 
 @property (nonatomic, weak) IBOutlet UILabel *displayLabel;
+@property (weak, nonatomic) IBOutlet UILabel *currencyLabel;
 
 @end
 
@@ -10,6 +11,7 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	self.displayLabel = @"0";
 }
 
 - (IBAction)buttonTouched:(id)sender {

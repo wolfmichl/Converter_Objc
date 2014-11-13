@@ -284,6 +284,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currencyLabel" destination="qrV-XL-gdn" id="3aq-Db-SFz"/>
                         <outlet property="displayLabel" destination="HJc-cT-Jig" id="rL8-JC-83I"/>
                     </connections>
                 </viewController>
