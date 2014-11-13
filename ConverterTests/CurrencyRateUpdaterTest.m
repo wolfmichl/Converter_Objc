@@ -7,11 +7,11 @@
 @end
 
 @implementation CurrencyRateUpdaterTest {
-	XCTestExpectation *_expectation;
+	XCTestExpectation *expectation;
 }
 
-- (void)testShouldRetrieveCurrencyRate {
-	_expectation = [self expectationWithDescription:@"currency rate converted"];
+- (void)testShouldInformDelegateAboutRetrievingRates {
+	expectation = [self expectationWithDescription:@"currency rate converted"];
 	
 	CurrencyRateUpdater *updater = [[CurrencyRateUpdater alloc] init];
 	updater.delegate = self;
@@ -24,7 +24,7 @@
 }
 
 - (void)currencyRateUpdater:(CurrencyRateUpdater *)updater didUpdateRate:(NSNumber *)rate forCurrency:(NSString *)isoCode {
-	[_expectation fulfill];
+	[expectation fulfill];
 }
 
 @end
