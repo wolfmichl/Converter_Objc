@@ -26,6 +26,11 @@
 		26D1744E1A14DB3900021DC0 /* CurrencyRateUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1744D1A14DB3900021DC0 /* CurrencyRateUpdater.m */; };
 		26D174531A14F50300021DC0 /* CurrencyRateUpdaterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D174521A14F50300021DC0 /* CurrencyRateUpdaterTest.m */; };
 		26D174541A14F50700021DC0 /* CurrencyRateUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1744D1A14DB3900021DC0 /* CurrencyRateUpdater.m */; };
+		26FD426E1A15E976002B0E35 /* Numberpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FD426D1A15E976002B0E35 /* Numberpad.m */; };
+		26FD426F1A15E976002B0E35 /* Numberpad.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FD426D1A15E976002B0E35 /* Numberpad.m */; };
+		26FD42711A15E98E002B0E35 /* ConverterControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FD42701A15E98E002B0E35 /* ConverterControllerTest.m */; };
+		26FD42731A15EC73002B0E35 /* NumberpadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FD42721A15EC73002B0E35 /* NumberpadTest.m */; };
+		360E47FD57BBEF0D09831D62 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 360E41CDC9F84A8DE387995A /* NSString+Helper.m */; };
 		4589097A1ACD069896B70613 /* libPods-ConverterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF26E4C8ECD24EC98ED0341C /* libPods-ConverterTests.a */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +65,14 @@
 		26D1744C1A14DB3900021DC0 /* CurrencyRateUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyRateUpdater.h; sourceTree = "<group>"; };
 		26D1744D1A14DB3900021DC0 /* CurrencyRateUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyRateUpdater.m; sourceTree = "<group>"; };
 		26D174521A14F50300021DC0 /* CurrencyRateUpdaterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyRateUpdaterTest.m; sourceTree = "<group>"; };
+		26FD426C1A15E976002B0E35 /* Numberpad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Numberpad.h; sourceTree = "<group>"; };
+		26FD426D1A15E976002B0E35 /* Numberpad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Numberpad.m; sourceTree = "<group>"; };
+		26FD42701A15E98E002B0E35 /* ConverterControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConverterControllerTest.m; sourceTree = "<group>"; };
+		26FD42721A15EC73002B0E35 /* NumberpadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberpadTest.m; sourceTree = "<group>"; };
 		276106AF19E5D9E100708A18 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		276106B219E5DF2400708A18 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		360E41CDC9F84A8DE387995A /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
+		360E4361129F45805544A6F5 /* NSString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helper.h"; sourceTree = "<group>"; };
 		360E4609E99E7EA9B4074EDD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		940D1B5136C17D6CCD22CB80 /* Pods-ConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConverterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ConverterTests/Pods-ConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		C7F28C2FA8D94B64CF496339 /* Pods-ConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConverterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConverterTests/Pods-ConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +143,10 @@
 				26381B0019CB2AA7005884FF /* Images.xcassets */,
 				26381B0219CB2AA7005884FF /* LaunchScreen.xib */,
 				26381AF319CB2AA7005884FF /* Supporting Files */,
+				26FD426C1A15E976002B0E35 /* Numberpad.h */,
+				26FD426D1A15E976002B0E35 /* Numberpad.m */,
+				360E41CDC9F84A8DE387995A /* NSString+Helper.m */,
+				360E4361129F45805544A6F5 /* NSString+Helper.h */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -151,6 +166,8 @@
 				26381B0D19CB2AA7005884FF /* Supporting Files */,
 				268528F21A14BBA100BCDACB /* SmokeUnitTest.m */,
 				26D174551A14FA9C00021DC0 /* CurrencyRateUpdater */,
+				26FD42701A15E98E002B0E35 /* ConverterControllerTest.m */,
+				26FD42721A15EC73002B0E35 /* NumberpadTest.m */,
 			);
 			path = ConverterTests;
 			sourceTree = "<group>";
@@ -374,9 +391,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				26381AFC19CB2AA7005884FF /* ConverterController.m in Sources */,
+				26FD426E1A15E976002B0E35 /* Numberpad.m in Sources */,
 				26D1744E1A14DB3900021DC0 /* CurrencyRateUpdater.m in Sources */,
 				26381AF919CB2AA7005884FF /* AppDelegate.m in Sources */,
 				26381AF619CB2AA7005884FF /* main.m in Sources */,
+				360E47FD57BBEF0D09831D62 /* NSString+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,8 +403,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FD42731A15EC73002B0E35 /* NumberpadTest.m in Sources */,
 				26D174531A14F50300021DC0 /* CurrencyRateUpdaterTest.m in Sources */,
 				268528F31A14BBA100BCDACB /* SmokeUnitTest.m in Sources */,
+				26FD42711A15E98E002B0E35 /* ConverterControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26D174541A14F50700021DC0 /* CurrencyRateUpdater.m in Sources */,
+				26FD426F1A15E976002B0E35 /* Numberpad.m in Sources */,
 				26BE264D1A14AB8D00CC364C /* ConverterController.m in Sources */,
 				26BE263D1A14AA6400CC364C /* AppDelegate.m in Sources */,
 				26BE263E1A14AA6400CC364C /* main.m in Sources */,

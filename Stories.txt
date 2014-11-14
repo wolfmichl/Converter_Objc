@@ -20,8 +20,6 @@ erscheint die entsprechende Ziffer im Display.
 Wenn ich auf mehrere Zahlentasten drücke,
 dann werden die Zahlen hintereinander gehängt.
 Damit kann ich mehrstellige Zahlen eingeben.
-Es ist erstmal erlaubt, dass Nullen am Anfang
-stehen können.
 
 -----------------------------------
 - Story #3: Beschränke die Länge  -
