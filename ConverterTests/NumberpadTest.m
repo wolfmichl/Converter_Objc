@@ -8,15 +8,6 @@
 #define HC_SHORTHAND
 #import "OCHamcrest/OCHamcrest.h"
 
-@interface Numberpad (Testing)
-- (void)setCurrentValue:(NSString *)value;
-@end
-
-@implementation Numberpad (Testing)
-- (void)setCurrentValue:(NSString *)value {
-	_currentValue = value;
-}
-@end
 
 @interface NumberpadTest : XCTestCase
 

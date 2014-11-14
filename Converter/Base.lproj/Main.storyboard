@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -172,14 +172,17 @@
                                             <action selector="buttonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DL9-at-tfD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4T-o2-JsE">
-                                        <rect key="frame" x="0.0" y="-3" width="186" height="79"/>
+                                    <button opaque="NO" tag="16" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4T-o2-JsE">
+                                        <rect key="frame" x="-1" y="-3" width="186" height="79"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" label="ConvertButton"/>
                                         <state key="normal" title="Convert">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="convertButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WfL-3R-4fd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n58-R8-1Ot">
                                         <rect key="frame" x="191" y="-3" width="186" height="79"/>
@@ -327,7 +330,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="currencyLabel" destination="HJc-cT-Jig" id="EkY-x4-6ss"/>
+                        <outlet property="currencyLabel" destination="qrV-XL-gdn" id="SIz-8d-cAO"/>
                         <outlet property="displayLabel" destination="HJc-cT-Jig" id="rL8-JC-83I"/>
                     </connections>
                 </viewController>

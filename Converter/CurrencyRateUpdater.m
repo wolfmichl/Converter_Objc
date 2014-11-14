@@ -1,13 +1,12 @@
 #import "CurrencyRateUpdater.h"
 
 static NSString *const ApiKey = @"9414e06390f044fd56d5c8bf2ed0c4104d204ce7";
-static NSString *const BaseCurrency = @"EUR";
 
 @implementation CurrencyRateUpdater
 
-- (void)updateConversionRateForCurrencyFromEuroTo:(NSString *)isoCode {
+- (void)updateConversionRateForCurrencyFrom:(NSString *)from toCurrency:(NSString *)isoCode {
 	dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), ^{
-	    NSString *conversion = [self retrieveConversionFrom:BaseCurrency to:isoCode];
+	    NSString *conversion = [self retrieveConversionFrom:from to:isoCode];
 		NSError *error;
 		NSNumber *rate = [self parse:conversion error:&error];
 		dispatch_async(dispatch_get_main_queue(), ^{

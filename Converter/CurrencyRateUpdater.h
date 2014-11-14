@@ -11,6 +11,6 @@
 
 @property (weak) id<CurrencyRateUpdaterDelegate> delegate;
 
-- (void)updateConversionRateForCurrencyFromEuroTo:(NSString *)isoCode;
+- (void)updateConversionRateForCurrencyFrom:(NSString *)from toCurrency:(NSString *)isoCode;
 
 @end

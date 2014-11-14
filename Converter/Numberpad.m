@@ -19,7 +19,7 @@ NSInteger ResetTag = 19;
 }
 
 - (void)buttonTouched:(id)sender {
-	if (_currentValue.length >= 10) {
+	if (self.currentValue.length >= 10) {
 		return;
 	}
 	if ([self isNumberButton:sender]) {
@@ -29,7 +29,7 @@ NSInteger ResetTag = 19;
 		[self appendPeriod:@"."];
 	}
 	if ([sender tag] == DeleteTag) {
-		_currentValue = [_currentValue substringToIndex:_currentValue.length - 1];
+		self.currentValue = [self.currentValue substringToIndex:self.currentValue.length - 1];
 	}
 	if ([sender tag] == 19) {
 		[self resetValue];
@@ -37,17 +37,17 @@ NSInteger ResetTag = 19;
 }
 
 - (void)appendPeriod:(NSString *)Period {
-	if ([_currentValue containsString:Period]) {
+	if ([self.currentValue containsString:Period]) {
 		return;
 	}
-	_currentValue = [_currentValue stringByAppendingString:Period];
+	self.currentValue = [self.currentValue stringByAppendingString:Period];
 }
 
 - (void)appendNumber:(NSInteger)number {
-	if ([_currentValue isEqualToString:@"0"]) {
-		_currentValue = [self stringFromNumber:number];
+	if ([self.currentValue isEqualToString:@"0"]) {
+		self.currentValue = [self stringFromNumber:number];
 	} else {
-		_currentValue = [_currentValue stringByAppendingString:[self stringFromNumber:number]];
+		self.currentValue = [self.currentValue stringByAppendingString:[self stringFromNumber:number]];
 	}
 }
 
@@ -58,10 +58,5 @@ NSInteger ResetTag = 19;
 - (BOOL)isNumberButton:(id)sender {
 	return [sender tag] >= 0 && [sender tag] <= 9;
 }
-
-- (NSString *)currentValue {
-	return _currentValue;
-}
-
 
 @end

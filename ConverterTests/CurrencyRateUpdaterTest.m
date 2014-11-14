@@ -15,7 +15,7 @@
 	
 	CurrencyRateUpdater *updater = [[CurrencyRateUpdater alloc] init];
 	updater.delegate = self;
-	[updater updateConversionRateForCurrencyFromEuroTo:@"USD"];
+	[updater updateConversionRateForCurrencyFrom:@"EUR" toCurrency:@"USD"];
 	[self waitForExpectationsWithTimeout:10 handler:nil];
 }
 
