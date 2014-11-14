@@ -69,5 +69,4 @@ aus dem Netz geladen. Rundungsfehler können vorkommen.
 --------------------------------------
 Wenn ich auf den Settings-Button drücke,
 erhalte ich eine Auswahl verschiedener Währungen,
-von denen ich eine Auswählen kann. Das ist erstmal
-nur möglich, wenn ich gerade einen Euro-Betrag anzeige.
+von denen ich eine Auswählen kann.
