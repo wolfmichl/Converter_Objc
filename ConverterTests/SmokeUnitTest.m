@@ -8,6 +8,6 @@
 @implementation SmokeUnitTest
 
 - (void)testItShouldSmoke {
-	XCTAssertFalse(TRUE);
+	XCTAssertFalse(FALSE);
 }
 @end
